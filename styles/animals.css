@@ -77,3 +77,24 @@ footer{
 /********************************
 	Special (added in class)
 ********************************/
+
+main{
+	/* subtract the value of the padding width from the width of our element */
+	width:calc(960px - 90px);
+	margin:20px auto;
+	background-image:url(../images/corkback.jpg);
+	background-repeat:repeat;
+	/* three values means top, left-right, bottom */
+	padding:25px 45px 45px;
+	/* set the border for all sides, then override it by just changing the top */
+	border:25px solid #542401;
+	border-top-width:55px;
+	border-radius:25px;
+	/* in boxshadow, the properties are:
+		type
+		x offset
+		y offset
+		length (or size)
+		colour */
+	box-shadow: 5px 5px 10px black, inset 3px 3px 7px black;
+}
